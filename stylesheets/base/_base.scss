@@ -1,0 +1,52 @@
+html, body, main {
+    min-height: 100%;
+}
+
+body {
+    background-color: $color-background-main;
+    padding: 3% 8%;
+}
+
+main {
+    @include flex-item(column);
+}
+
+h1, h2, h3 {
+    font-family: $ff-header;
+}
+
+:not(h1, h2, h3) {
+    font-family: $ff-content;
+}
+
+h1 {
+    font-size: $fs-h1;
+}
+
+::selection {
+    color: $color-accent;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+.cta-button {
+    padding: 0.5em 1.5em;
+    border-radius: 0.15em;
+    font-family: $ff-header;
+    background-color: $color-main;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.accent {
+    font-family: $ff-header;
+    color: $color-accent;
+}

@@ -1,0 +1,199 @@
+/*
+ * SOURCE: https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html, body, main {
+  min-height: 100%;
+}
+
+body {
+  background-color: #eee0cb;
+  padding: 3% 8%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+}
+
+:not(h1, h2, h3) {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 3.5rem + 1vmin, 5rem);
+}
+
+::selection {
+  color: #d30000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+.cta-button {
+  padding: 0.5em 1.5em;
+  border-radius: 0.15em;
+  font-family: "Fraunces", serif;
+  background-color: #2E282A;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accent {
+  font-family: "Fraunces", serif;
+  color: #d30000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 6em;
+}
+.header .cta-button {
+  display: none;
+  margin: 1.5em;
+}
+@media (max-width: 60rem) {
+  .header {
+    margin: 0;
+  }
+  .header .cta-button {
+    display: block;
+  }
+}
+
+.recent__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  list-style-type: decimal;
+}
+.recent__list li {
+  opacity: 0.6;
+  margin: 0 2em;
+}
+.recent__list li p {
+  margin-left: 0.5em;
+}
+.recent__list li::marker {
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+@media (max-width: 60rem) {
+  .recent__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  .recent__list li {
+    margin: 1em 0;
+  }
+  .recent__list li p {
+    margin-left: 0;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.socials__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.socials__list li {
+  margin: 0 2em;
+}
+.socials__list li a:not(.cta-button) {
+  opacity: 0.6;
+}
+@media (max-width: 60rem) {
+  .socials {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

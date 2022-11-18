@@ -1,27 +1,12 @@
-// 1. Base
 @import
-  'base/reset';
+  'abstracts/variables',
+  'abstracts/mixins';
 
-// 2. Abstracts
 @import
-  '';
+  'base/reset',
+  'base/base';
 
-// 3. Components
 @import
-  '';
-
-// 4. Layouts
-@import
-  '';
-
-// 5. Pages
-@import
-  '';
-
-// 6. Themes
-@import
-  '';
-  
-// 7. Vendors
-@import
-  '';
+  'components/header',
+  'components/recent',
+  'components/socials';

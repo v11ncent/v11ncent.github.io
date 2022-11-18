@@ -1,0 +1,18 @@
+.header {
+    @include flex-item(column);
+    text-align: center;
+    margin-bottom: 6em;
+
+    .cta-button {
+        display: none;
+        margin: 1.5em;
+    }
+
+    @media (max-width: $breakpoint-phone) {
+        margin: 0;
+
+        .cta-button {
+            display: block;
+        }
+    }
+}

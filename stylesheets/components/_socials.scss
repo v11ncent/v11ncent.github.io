@@ -1,0 +1,19 @@
+.socials {
+    @include flex-item(row, center, space-between);
+
+    &__list {
+        @include flex-item(row, center, center);
+
+        li {
+            margin: 0 2em;
+
+            a:not(.cta-button) {
+                opacity: $opacity-medium;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-phone) {
+        display: none;
+    }
+}
