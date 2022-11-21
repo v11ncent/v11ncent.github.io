@@ -3,12 +3,14 @@ html, body, main {
 }
 
 body {
+    @include flex-item(column);
     background-color: $color-background-main;
     padding: 3% 8%;
 }
 
 main {
     @include flex-item(column);
+    max-width: 81.25rem;
 }
 
 h1, h2, h3 {
