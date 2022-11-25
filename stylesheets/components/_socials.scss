@@ -1,5 +1,7 @@
 .socials {
     @include flex-item(row, center, space-between);
+    width: 100%;
+    max-width: 81.25rem;
     
     &__list {
         @include flex-item(row, center, center);
@@ -16,8 +18,6 @@
             }
         }
     }
-
-    width: 1300px;
 
     @media (max-width: $breakpoint-phone) {
         display: none;

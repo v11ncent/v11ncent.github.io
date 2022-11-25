@@ -1,9 +1,9 @@
-html, body, main {
+html, body {
     min-height: 100%;
 }
 
 body {
-    @include flex-item(column);
+    @include flex-item(column, center, flex-start);
     background-color: $color-background-main;
     padding: 3% 8%;
 }
@@ -11,7 +11,9 @@ body {
 main {
     @include flex-item(column);
     max-width: 81.25rem;
+    flex-grow: 1;
 }
+
 
 h1, h2, h3 {
     font-family: $ff-header;

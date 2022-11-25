@@ -61,7 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-html, body, main {
+html, body {
   min-height: 100%;
 }
 
@@ -69,7 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #eee0cb;
   padding: 3% 8%;
 }
@@ -80,6 +80,7 @@ main {
   align-items: center;
   justify-content: center;
   max-width: 81.25rem;
+  flex-grow: 1;
 }
 
 h1, h2, h3 {
@@ -134,7 +135,7 @@ a {
   display: none;
   margin: 1.5em;
 }
-@media (max-width: 60rem) {
+@media (max-width: 70rem) {
   .header {
     margin: 0;
   }
@@ -151,7 +152,6 @@ a {
   list-style-type: decimal;
 }
 .recent__list li {
-  flex: 1;
   margin: 0 2em;
   opacity: 0.6;
 }
@@ -162,7 +162,7 @@ a {
   font-family: "Fraunces", serif;
   font-weight: bold;
 }
-@media (max-width: 60rem) {
+@media (max-width: 70rem) {
   .recent__list {
     display: flex;
     flex-direction: column;
@@ -183,7 +183,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1300px;
+  width: 100%;
+  max-width: 81.25rem;
 }
 .socials__list {
   display: flex;
@@ -200,7 +201,7 @@ a {
 .socials__list li a:not(.cta-button) {
   opacity: 0.6;
 }
-@media (max-width: 60rem) {
+@media (max-width: 70rem) {
   .socials {
     display: none;
   }
