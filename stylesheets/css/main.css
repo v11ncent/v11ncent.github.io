@@ -154,6 +154,7 @@ a {
 .recent__list li {
   margin: 0 2em;
   opacity: 0.6;
+  flex: 1;
 }
 .recent__list li p {
   margin-left: 0.5em;
