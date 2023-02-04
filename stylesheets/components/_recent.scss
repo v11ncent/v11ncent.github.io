@@ -1,32 +1,32 @@
 .recent__list {
-    @include flex-item(row, flex-start);
-    list-style-type: decimal;
+  @include flex-item(row, flex-start);
+  list-style-type: decimal;
+
+  li {
+    margin: 0 2em;
+    opacity: $opacity-medium;
+    flex: 1;
+
+    p {
+      margin-left: 0.5em;
+    }
+
+    &::marker {
+      font-family: $ff-header;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    @include flex-item(column, flex-start, flex-start);
+    list-style-type: none;
 
     li {
-        margin: 0 2em;
-        opacity: $opacity-medium;
-        flex: 1;
-        
-        p {
-            margin-left: 0.5em;
-        }
+      margin: 1em 0;
 
-        &::marker {
-            font-family: $ff-header;
-            font-weight: bold;
-        }
+      p {
+        margin-left: 0;
+      }
     }
-
-    @media (max-width: $breakpoint-phone) {
-        @include flex-item(column, flex-start, flex-start);
-        list-style-type: none;
-
-        li {
-            margin: 1em 0;
-
-            p {
-                margin-left: 0;
-            }
-        }
-    }
+  }
 }

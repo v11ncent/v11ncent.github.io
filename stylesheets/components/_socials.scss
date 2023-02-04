@@ -1,25 +1,25 @@
 .socials {
-    @include flex-item(row, center, space-between);
-    width: 100%;
-    max-width: 81.25rem;
-    
-    &__list {
-        @include flex-item(row, center, center);
+  @include flex-item(row, center, space-between);
+  width: 100%;
+  max-width: 81.25rem;
 
-        li {
-            margin: 0 2em;
+  &__list {
+    @include flex-item(row, center, center);
 
-            &:last-child {
-                margin: 0 0 0 2em;
-            }
+    li {
+      margin: 0 2em;
 
-            a:not(.cta-button) {
-                opacity: $opacity-medium;
-            }
-        }
+      &:last-child {
+        margin: 0 0 0 2em;
+      }
+
+      a:not(.cta-button) {
+        opacity: $opacity-medium;
+      }
     }
+  }
 
-    @media (max-width: $breakpoint-phone) {
-        display: none;
-    }
+  @media (max-width: $breakpoint-phone) {
+    display: none;
+  }
 }

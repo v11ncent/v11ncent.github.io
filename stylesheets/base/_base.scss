@@ -1,56 +1,70 @@
-html, body {
-    min-height: 100%;
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-    @include flex-item(column, center, flex-start);
-    background-color: $color-background-main;
-    padding: 3% 8%;
+  @include flex-item(column, center, flex-start);
+  background-color: $color-background-main;
+  padding: 3% 8%;
 }
 
 main {
-    @include flex-item(column);
-    max-width: 81.25rem;
-    flex-grow: 1;
+  @include flex-item(column);
+  max-width: 81.25rem;
+  flex-grow: 1;
 }
 
-
-h1, h2, h3 {
-    font-family: $ff-header;
+h1,
+h2,
+h3 {
+  font-family: $ff-header;
 }
 
 :not(h1, h2, h3) {
-    font-family: $ff-content;
+  font-family: $ff-content;
 }
 
 h1 {
-    font-size: $fs-h1;
+  font-size: $fs-h1;
+  font-weight: 800;
 }
 
 ::selection {
-    color: $color-accent;
+  color: $color-accent;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 .cta-button {
-    padding: 0.5em 1.5em;
-    border-radius: 0.15em;
-    font-family: $ff-header;
-    background-color: $color-main;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  padding: 0.5em 1.5em;
+  border-radius: 0.15em;
+  font-family: $ff-header;
+  background-color: $color-main;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .accent {
-    font-family: $ff-header;
-    color: $color-accent;
+  font-family: $ff-header;
+  color: $color-accent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
