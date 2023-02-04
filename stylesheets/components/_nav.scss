@@ -1,7 +1,9 @@
-.socials {
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.nav {
   @include flex-item(row, center, space-between);
   width: 100%;
-  max-width: 81.25rem;
 
   &__list {
     @include flex-item(row, center, center);
@@ -11,10 +13,6 @@
 
       &:last-child {
         margin: 0 0 0 2em;
-      }
-
-      a:not(.cta-button) {
-        opacity: $opacity-medium;
       }
     }
   }

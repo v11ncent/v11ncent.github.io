@@ -90,6 +90,12 @@ body {
   justify-content: flex-start;
   background-color: #eee0cb;
   padding: 3% 8%;
+  font-size: 1.125rem;
+}
+
+header,
+main {
+  max-width: 93.75rem;
 }
 
 main {
@@ -97,7 +103,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 81.25rem;
   flex-grow: 1;
 }
 
@@ -116,8 +121,8 @@ h1 {
   font-weight: 800;
 }
 
-::selection {
-  color: #d30000;
+p {
+  max-width: 70ch;
 }
 
 ul {
@@ -127,6 +132,17 @@ ul {
 
 a {
   color: black;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .cta-button {
@@ -144,18 +160,11 @@ a {
   color: #d30000;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+::selection {
+  color: #d30000;
 }
 
-.header {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,15 +172,15 @@ a {
   text-align: center;
   margin-bottom: 6em;
 }
-.header .cta-button {
+.hero .cta-button {
   display: none;
   margin: 1.5em;
 }
-@media (max-width: 70rem) {
-  .header {
+@media (max-width: 93.75rem) {
+  .hero {
     margin: 0;
   }
-  .header .cta-button {
+  .hero .cta-button {
     display: block;
   }
 }
@@ -185,7 +194,6 @@ a {
 }
 .recent__list li {
   margin: 0 2em;
-  opacity: 0.6;
   flex: 1;
 }
 .recent__list li p {
@@ -195,7 +203,7 @@ a {
   font-family: "Fraunces", serif;
   font-weight: bold;
 }
-@media (max-width: 70rem) {
+@media (max-width: 93.75rem) {
   .recent__list {
     display: flex;
     flex-direction: column;
@@ -211,31 +219,27 @@ a {
   }
 }
 
-.socials {
+.nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 81.25rem;
 }
-.socials__list {
+.nav__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.socials__list li {
+.nav__list li {
   margin: 0 2em;
 }
-.socials__list li:last-child {
+.nav__list li:last-child {
   margin: 0 0 0 2em;
 }
-.socials__list li a:not(.cta-button) {
-  opacity: 0.6;
-}
-@media (max-width: 70rem) {
-  .socials {
+@media (max-width: 93.75rem) {
+  .nav {
     display: none;
   }
 }

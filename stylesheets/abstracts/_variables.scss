@@ -8,17 +8,17 @@ $color-accent: rgb(211, 0, 0);
 
 $fs-h1: clamp(2.5rem, 3.5rem + 1vmin, 5rem);
 $fs-nav: clamp(1rem, 0.7rem + 1vmin, 2rem);
-$fs-li: 1rem;
+$fs-body: 1.125rem;
 
 // Font families
 
 $ff-header: "Fraunces", serif;
 $ff-content: "Inter", sans-serif;
 
-// Opacity
-
-$opacity-medium: 0.6;
-
 // Breakpoints
 
-$breakpoint-phone: 70rem;
+$breakpoint-phone: 93.75rem;
+
+// Widths
+
+$width-container: 93.75rem;
